@@ -15,7 +15,7 @@ const SearchBar = ({term, onTermChange, onTermSubmitt}) => {
                 style={styles.inputStyle}
                 value={term}
                 onChangeText={newTerm => onTermChange(newTerm)}
-                onEndEditing={()=>onTermSubmitt(console.log('submitted'))}
+                onEndEditing={()=>onTermSubmitt()}
                 />
         </View>
     );
@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
         height: 50,
         borderRadius: 5,
         marginHorizontal: 15,
+        marginBottom: 10,
         flexDirection: 'row'
     },
     inputStyle: {
